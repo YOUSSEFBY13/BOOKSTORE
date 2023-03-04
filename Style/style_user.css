@@ -1,0 +1,841 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+    color: #444444;
+}
+
+@media only screen and (max-width: 780px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* =========== End NavBar ============= */
+
+/* ===== serch style ========*/
+.search_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.search_user .search {
+    width: 700px;
+    height: 50px;
+    border-radius: 11px;
+}
+
+.search_user .search_b {
+    width: 70px;
+    height: 50px;
+    border-radius: 7px;
+    background: #333;
+    color: #fff;
+}
+
+/* ============ End Style Search ================== */
+
+/* =========== Start Style Category ========= */
+.dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+}
+
+@media only screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+    }
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu li .dropdown-item {
+    color: gray;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu li:first-child a:hover {
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 992px) {
+    .dropdown-menu.show {
+        flex-wrap: wrap;
+        max-height: 350px;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .dropdown:hover .dropdown-menu {
+        width: 40vw;
+        flex-wrap: wrap;
+    }
+}
+
+/* =========== End Style Category ========= */
+
+/* =========== Start Style Shopping Cart ========= */
+ul {
+    list-style: none;
+}
+
+.cart_images {
+    max-width: 150px;
+}
+
+.shop_h1 {
+    margin: 100px 0 70px 300px;
+}
+
+.total {
+    float: right;
+    margin: 0 300px 0 0;
+}
+
+.shop2_button {
+    float: right;
+    margin: 0 300px 0 0;
+    width: 300px;
+    height: 45px;
+    border: #DE3163;
+    background: #DE3163;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.shop2_button2 .btn_up {
+    float: right;
+    margin: 0 20px 0 0;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #DE3163;
+    background: #fff;
+    color: #DE3163;
+    border-radius: 10px;
+}
+
+.shop2_button2 .ptn_check {
+    float: right;
+    margin: 0 300px 0 0;
+    width: 100px;
+    height: 45px;
+    border: #DE3163;
+    background: #DE3163;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.shop2_button2 .ptn_check a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.shop2_button3 .btn_empty {
+    margin: 100px 0 70px 300px;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #B8B8B8;
+    background: #B8B8B8;
+    color: #333;
+    border-radius: 10px;
+}
+
+.shop2_button3 .btn_shop {
+    margin: 0 30px 0 0;
+    width: 200px;
+    height: 45px;
+    border: #DE3163;
+    background: #DE3163;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.shop_cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 260px 0 300px;
+}
+
+.shop_cart .qty {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop_cart .qty li {
+    margin-right: 70px;
+}
+
+
+.shop_cart .qty_2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop_cart .qty_2 li {
+    margin-right: 60px;
+}
+
+.shop_cart .qty_2 li input {
+    width: 50px;
+}
+
+hr {
+    margin: 150px 300px 100px 300px;
+}
+
+.shop_cart_book {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop_cart_book .shop_autor {
+    margin: 20px 0 0 30px;
+}
+
+.shop2_button3 .btn_empty a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* =======media cart shopping ========= */
+@media only screen and (max-width: 800px) {
+    ul {
+        list-style: none;
+    }
+
+    .cart_images {
+        max-width: 150px;
+    }
+
+    .shop_h1 {
+        margin: 50px 0 30px 50px;
+    }
+
+    .total {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    .shop2_button {
+        float: none;
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 45px;
+    }
+
+    .shop2_button2 .btn_up {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .shop2_button2 .ptn_check {
+        float: none;
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .shop2_button2 .ptn_check a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .shop2_button3 .btn_empty {
+        margin: 50px 0 30px 0;
+        width: 100%;
+        height: 45px;
+    }
+
+    .shop2_button3 .btn_shop {
+        margin: 0 0 20px 0;
+        width: 100%;
+        height: 45px;
+    }
+
+    .shop_cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 20px 0 20px;
+    }
+
+    .shop_cart .qty {
+        display: none;
+    }
+
+    .shop_cart .qty li {
+        margin-right: 20px;
+    }
+
+    .shop_cart .qty_2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shop_cart .qty_2 li {
+        margin-right: 20px;
+    }
+
+    hr {
+        margin: 50px 20px 30px 20px;
+    }
+
+    .shop_cart_book {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shop_cart_book .shop_autor {
+        margin: 20px 0 0 20px;
+    }
+
+    .shop2_button3 .btn_empty a {
+        text-decoration: none;
+        color: #333;
+    }
+
+}
+
+
+/* =========== End Style Shopping Cart ========= */
+
+
+/*=========== Start style for Orders ============= */
+
+.container-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container-order form {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-order form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container-order form .row .col {
+    flex: 1 1 250px;
+}
+
+.container-order form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container-order form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.container-order form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container-order form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container-order form .row .col .inputBox input:focus {
+    border: 1px solid #000;
+}
+
+.container-order form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container-order form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+
+.container-order form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container-order form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #333;
+    border-color: #333;
+    border-radius: 7px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container-order form .submit-btn:hover {
+    background: #333;
+}
+
+/* ================ End style Order============ */
+
+
+/*===== Start Slider Card==========*/
+
+.featured_boks {
+    width: 100%;
+    padding: 30px 100px 0 100px;
+}
+
+.featured_boks h1 {
+    display: flex;
+    font-size: 45px;
+}
+
+
+.featured_book_box form a img {
+    width: 200px;
+    height: 300px;
+    padding: 12px;
+}
+
+.featured_boks .featured_book_box {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+/* ===========  End Slider card */
+
+
+/* ======================== Style For Card index_page========== */
+.book-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.card-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.card-book:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.new-img {
+    max-width: 100%;
+    height: 250px;
+}
+
+.name-book {
+    /* margin: 10px 0; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.autor-book {
+    /* margin: 10px 0; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #757575;
+}
+
+.price {
+    /* margin: 10px 0; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+button[type="submit"] {
+    /* margin-top: 10px; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* ======================== End Style For Card index_book ============ */
+
+/* =============== Start Style Reviews ============ */
+.reviws {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #c4c3c3;
+    border-radius: 50px;
+    width: 600px;
+    height: 90rem;
+}
+
+.reviews-h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.review {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.start {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.firstname {
+    background: #d4d4d4;
+    border-radius: 50%;
+    margin-right: 11px;
+    width: 70px;
+    height: 70px;
+}
+
+.firstname p {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.time {
+    font-size: 14px;
+    color: #777;
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.reviws-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rev_title {
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.rev_comm {
+    height: 100px;
+    width: 500px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.rateyo {
+    margin: 10px 0 10px 170px;
+}
+
+.reviws-add {
+    margin: 10px 0 10px 170px;
+}
+
+.reviws-add {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reviws-add:hover {
+    background-color: #005f6b;
+}
+
+/* =============== End Style Reviews ============ */
+
+
+/* ======== Start Style for Scrol Up ========= */
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff no-repeat url(../image/up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ======== End Style for Scrol Up ========= */
+
+/* ============ Start Style Category New Books============ */
+.category-header {
+    background: #7B68EE;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-header .category-title {
+    color: #fff;
+    padding: 100px 50px 0px 150px;
+    font-size: 5rem;
+}
+
+.category-header .desc-category .desc-p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 300px;
+}
+
+.category-header .category-img {
+    width: 500px;
+    height: 25rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .category-img {
+        display: none;
+    }
+}
+
+.add_cart {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #089da1;
+    border-radius: 17px;
+    background: #089da1;
+    color: #fff;
+}
+
+/* ============ End Style Category New Books============ */
+
+/* ============= Start Style Pagnation ============== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a:first-child {
+    margin-left: 0;
+}
+
+.pagination a:last-child {
+    margin-right: 0;
+}
+
+/* ============= End Style Pagnation ============== */
+
+
+/*=============== style footer ===================*/
+.footer {
+    background: #333;
+    margin-top: 50px;
+}
+
+.footer .footer-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #333;
+    padding: 40px;
+}
+
+.footer .footer-col ul {
+    list-style: none;
+    margin-bottom: 0;
+
+}
+
+.footer .footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a span {
+    text-decoration: none;
+    color: aqua;
+    font-size: 40px;
+}
+
+.footer .footer-col ul li a h1 {
+    font-size: 33px;
+}
+
+.footer .footer-col ul h2 {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.footer-Copyright {
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+
+/* ========== Media ============== */
