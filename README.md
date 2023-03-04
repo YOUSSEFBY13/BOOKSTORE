@@ -1,2 +1,2 @@
 # BOOKSTORE
-Project For echoole
+Project For School
