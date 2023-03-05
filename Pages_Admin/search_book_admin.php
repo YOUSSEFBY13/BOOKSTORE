@@ -21,7 +21,7 @@ session_start();
         if (isset($_GET['b_search'])) {
             $search = $_GET['search'];
 
-            $select = mysqli_query($conn, "SELECT * FROM books where CONCAT(book_title, book_autor, book_price, book_desc, book_lang, book_numbe_page, book_type, book_image) LIKE '%$search%' ORDER BY id DESC");
+            $select = mysqli_query($conn, "SELECT * FROM books where CONCAT(book_title, book_autor, book_price, book_desc, book_lang, book_numbe_page, book_type) LIKE '%$search%' ORDER BY id DESC");
 
         ?>
             <div class="book-add">
