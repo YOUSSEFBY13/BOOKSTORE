@@ -91,8 +91,7 @@ if (mysqli_num_rows($select_cart) > 0) {
         <button class="btn_empty"><a href="shopping_cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');">EMPTY</a></button>
         <button class="btn_shop" onclick="window.location.href='index_book.php'">CONTINUE SHOPPING</button>
     </div>
-        </form>y
-
+        </form>
 
         <?php
         @include 'footer.php'

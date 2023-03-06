@@ -35,8 +35,8 @@ if (isset($_POST['add_to_cart'])) {
         $insert = mysqli_query($conn, "INSERT INTO cart_book(book_cart_name, book_cart_autor, book_cart_price, book_cart_image, book_cart_quantity) VALUES('$book_cart_name', '$book_cart_autor', '$book_cart_price', '$book_cart_image', '$book_quantity')");
         echo 'Book added to cart successfully.';
     }
-    
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -281,8 +281,25 @@ if (isset($_POST['add_to_cart'])) {
                                                 <p><?php echo substr($row['rev_title'], 0, 1); ?></p>
                                             </div>
                                             <div>
-                                                <?php echo $row['rate']; ?><span class="time"><?php $current_time = date('Hd/m/y');
-                                                                                                echo $current_time; ?></span>
+                                                <span class="rateN">
+                                                    <?php
+                                                    $stars = 1;
+                                                    while ($stars <= 5) {
+                                                        if ($row['rate'] < $stars) {
+                                                    ?>
+                                                            <i class="fa fa-star-o"></i>
+                                                        <?php
+                                                        } else {
+                                                        ?>
+                                                            <i class="fa fa-star"></i>
+                                                    <?php
+                                                        }
+                                                        $stars++;
+                                                    }
+                                                    ?>
+                                                </span>
+                                                <span class="time"><?php $current_time = date('d/m/y');
+                                                                    echo $current_time; ?></span>
                                                 <div class="title"><?php echo $row['rev_title']; ?></div>
                                             </div>
                                         </div>

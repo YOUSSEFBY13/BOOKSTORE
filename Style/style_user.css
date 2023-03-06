@@ -601,6 +601,11 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
+.rateN{
+    color: #faea07;
+    font-weight: bold;
+}
+
 .time {
     font-size: 14px;
     color: #777;
