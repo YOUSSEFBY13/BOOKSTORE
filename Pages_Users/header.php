@@ -33,12 +33,13 @@ if (!isset($_SESSION['email'])) {
 
 <body>
     <div class="nav">
+        <a href="index_book.php"><img class="logo-media" src="../Image/R-logo.png" alt=""></a>
         <ul>
             <li><a href="index_book.php">HOME</a></li>
             <li><a href="#">ABOUTE</a></li>
             <li><a href="contact.php">CONTACT</a></li>
         </ul>
-        <a href="index_book.php"><img src="../Image/R-logo.png" alt=""></a>
+        <a href="index_book.php"><img class="logo" src="../Image/R-logo.png" alt=""></a>
         <ul>
             <li>
                 <?php
@@ -67,6 +68,7 @@ if (!isset($_SESSION['email'])) {
             <a href="shopping_cart.php">CART(<span><?php echo $row_count; ?></span>)</a>
         </li>
         <li><a href="#">FAVOURITE()</a></li>
+        <li class="books-nav"><a href="#">Choose A Books</a></li>
         </ul>
     </div>
     <!-- ==== Start Section Serch ======= -->

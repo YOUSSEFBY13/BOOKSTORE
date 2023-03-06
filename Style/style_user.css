@@ -16,12 +16,19 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin-right: 200px;
+}
+
+.logo {
+    width: 11rem;
+    margin-right: 140px;
 }
 
 .nav ul li a {
     text-decoration: none;
     color: #333;
-    margin: 0 20px;
+    margin: 10px;
+    font-size: .9rem;
 }
 
 .nav ul li a:hover {
@@ -29,20 +36,43 @@
     color: #444444;
 }
 
-@media only screen and (max-width: 780px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
+.books-nav {
+    display: none;
+}
 
-    .nav ul {
-        flex-direction: column;
+.logo-media {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
+        list-style: none;
+        background: #d8d8d8;
+    }
+    .nav ul{
+        margin: auto;
     }
 
     .nav ul li a {
         display: block;
-        margin: 10px 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .books-nav {
+        display: block;
+    }
+
+    .logo-media {
+        display: block;
+        width: 8rem;
     }
 }
 
@@ -56,18 +86,36 @@
 }
 
 .search_user .search {
-    width: 700px;
-    height: 50px;
+    width: 500px;
+    height: 40px;
     border-radius: 11px;
 }
 
 .search_user .search_b {
     width: 70px;
-    height: 50px;
+    height: 40px;
     border-radius: 7px;
     background: #333;
     color: #fff;
 }
+
+@media only screen and (max-width: 780px) {
+    .search_user .search {
+        width: 200px;
+        height: 40px;
+        border-radius: 11px;
+    }
+
+    .search_user .search_b {
+        width: 70px;
+        height: 40px;
+        border-radius: 7px;
+        background: #333;
+        color: #fff;
+    }
+
+}
+
 
 /* ============ End Style Search ================== */
 
@@ -601,7 +649,7 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
-.rateN{
+.rateN {
     color: #faea07;
     font-weight: bold;
 }
