@@ -61,10 +61,10 @@ if (isset($_POST['add_to_cart'])) {
 
 <div class="marggin-section  ml-5 mr-5">
     <div class="featured_boks">
-        <h1>Another Books</h1>
+        <h1>Last Add's</h1>
         <div class="featured_book_box" style="margin: 0;">
             <?php
-            $select = mysqli_query($conn, "SELECT * FROM  books order by id desc limit 10");
+            $select = mysqli_query($conn, "SELECT * FROM  books order by id desc limit 12");
             if (mysqli_num_rows($select) > 0) {
                 while ($row = mysqli_fetch_assoc($select)) {
             ?>
@@ -80,10 +80,9 @@ if (isset($_POST['add_to_cart'])) {
 </div>
 <div class="marggin-section  ml-5 mr-5">
     <div class="featured_boks">
-        <h1>Another Books</h1>
         <div class="featured_book_box" style="margin: 0;">
             <?php
-            $select = mysqli_query($conn, "SELECT * FROM  books order by id desc limit 10");
+            $select = mysqli_query($conn, "SELECT * FROM books WHERE id < (SELECT MIN(id) FROM (SELECT id FROM books ORDER BY id DESC LIMIT 10) sub) ORDER BY id DESC");
             if (mysqli_num_rows($select) > 0) {
                 while ($row = mysqli_fetch_assoc($select)) {
             ?>
@@ -142,11 +141,10 @@ if (isset($_POST['add_to_cart'])) {
     </div>
 </div>
 <div class="featured_boks">
-    <h1>Another Books</h1>
     <div class="featured_book_box">
         <?php
-        $select = mysqli_query($conn, "SELECT * FROM  books order by book_title desc limit 9");
-        if (mysqli_num_rows($select) > 0) {
+            $select = mysqli_query($conn, "SELECT * FROM books WHERE id < (SELECT MIN(id) FROM (SELECT id FROM books ORDER BY id DESC LIMIT 10) sub) ORDER BY id DESC");
+            if (mysqli_num_rows($select) > 0) {
             while ($row = mysqli_fetch_assoc($select)) {
         ?>
                 <form action="" method="post">
@@ -186,7 +184,7 @@ if (isset($_POST['add_to_cart'])) {
 </div>
 <!-- ================================= -->
 
-<h1 style="margin: 0 0 0 100px;">Last Add's</h1>
+<h1 style="margin: 0 0 0 100px;">Featured Books</h1>
 <div class="book-wrap">
     <?php
     $select = mysqli_query($conn, "SELECT * FROM  books order by id desc limit 4");
